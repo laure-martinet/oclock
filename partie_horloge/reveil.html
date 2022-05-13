@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="reveil.css"/>
+	</head>
+<body>
+    <header>
+        <a href="minuteur.html">Minuteur</a>
+        <a href="horloge.html">Horloge</a>
+        <a href="chronometre.html">Chronometre</a>
+        <a href="reveil.html">Reveil</a>
+    </header>
+
+    <main>
+            <div class="col-md-3"></div>
+            <div class="col-md-6 well">
+                <h3 class="text-primary">Réveil :</h3>
+                <hr style="border-top:1px dotted #ccc;"/>
+                <center>
+                    <input type="datetime-local" id="alarmTime"/>
+                    <button type="button" onclick="setAlarm(this);" id="alarmButton" class="btn btn-success"><span class="glyphicon glyphicon-time"></span> Set Alarm</button>
+                </center>
+                <br />
+                <div id="selectButton" style="display:none;">
+                    <center>
+                        <button onclick="snoozeAlarm();" class="btn btn-warning"><span class="glyphicon glyphicon-pause"></span> Répéter dans 5 minutes</button>
+                        <button onclick="stopAlarm();" class="btn btn-danger"><span class="glyphicon glyphicon-stop"></span>Stop</button>
+                    </center>
+                </div>
+            </div>
+    </main>
+ 
+<script src="reveil.js"></script>
+</body>
+</html>
