@@ -17,6 +17,13 @@
 		input[type="button"] {
             border: none;
             padding: 10px;
-            background-color: rgba(50,205,50, 0.25);
+            background-color: rgba(255, 255, 255, 0.601);
             cursor: pointer;
         }
+body{
+    display:grid;
+    place-items:center;
+    background-color:rgb(0, 0, 0);
+    color:#ffffff;
+    font-family:'IBM Plex Sans',sans-serif;
+    }
